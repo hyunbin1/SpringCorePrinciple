@@ -6,6 +6,7 @@ import org.junit.jupiter.api.Test;
 import spring.core.memberImplement.MemberServiceImpl;
 
 public class MemberServiceTest {
+    // 아래 코드는 추상화 + 실제 구현체 두가지 모두를 의존한다는 문제가 있다.
     MemberService memberService = new MemberServiceImpl();
 
     @Test
