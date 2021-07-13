@@ -6,8 +6,23 @@ import spring.core.member.MemberRepository;
 import java.util.HashMap;
 import java.util.Map;
 
+// 메모리에 저장되는 저장소를 실제로 구현해주기
 public class MemoryMemberRepository implements MemberRepository {
+
+    // 회원 번호와 회원 정보를 매칭 시켜주기
     private static Map<Long, Member> store = new HashMap<>();
+
+    @Override
+    // 회원 아이디에 따라 회원 정보 저장해주기
+    public void save(Member member){
+        store.put(member.getId(), member);
+    }
+
+    @Override
+    // 회원 아이디 찾기
+    public Member findById(Long memberId){
+        return store.get(memberId);
+    }
 
 
 
