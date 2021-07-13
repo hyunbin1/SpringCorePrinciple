@@ -1,7 +1,22 @@
 package spring.core.memberImplement;
 
-public class MemoryMemberRepository {
+import spring.core.member.Member;
+import spring.core.member.MemberRepository;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class MemoryMemberRepository implements MemberRepository {
+    private static Map<Long, Member> store = new HashMap<>();
+
+
+
+
 }
+
+
+
+
 
 
 /*
@@ -18,4 +33,7 @@ public class MemoryMemberRepository {
    + 해시함수: key값을 value로 값을 바꿔주기 위한 수식이다.
    + 해싱: 해시 테이블을 생서앟여 저장된 정보를 빠르게 검색할 수 있다.
 
+
+2. Implements: 상속의 일종으로, 부모의 메소드를 반드시 오버라이딩(재정의)해야한다. 이는 다중 상속을 대신해준다.
+    extends는 일반 클래스와 추상 클래스 상속에 사용되고, implement는 interface 상속에 사용된다.
 */
