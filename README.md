@@ -47,6 +47,9 @@
 
     즉 실제 구현은: 클라이언트 -> MemberServiceImpl -> MemoryMemberRepository 로 구현된다.
     
+<br>
+<br>
+
 
 ### 주문 도메인 협력, 역할, 책임
 ![image](https://user-images.githubusercontent.com/63040492/125545268-113bc350-92c4-4f46-a462-fbe751be1d55.png)
