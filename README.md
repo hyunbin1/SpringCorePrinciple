@@ -46,7 +46,16 @@
  ![image](https://user-images.githubusercontent.com/63040492/125380299-f2b95d80-e3cc-11eb-81a8-4c4e88637f8f.png)
 
     즉 실제 구현은: 클라이언트 -> MemberServiceImpl -> MemoryMemberRepository 로 구현된다.
- 
- 
- 
- 
+    
+
+![image](https://user-images.githubusercontent.com/63040492/125545268-113bc350-92c4-4f46-a462-fbe751be1d55.png)
+
+![image](https://user-images.githubusercontent.com/63040492/125545313-36fcf173-b663-437e-a9be-ce69efd61e50.png)
+
+![image](https://user-images.githubusercontent.com/63040492/125545337-7e7bfb26-517a-4eb2-9633-caff89adeb5e.png)
+
+![image](https://user-images.githubusercontent.com/63040492/125545387-520cd2e6-a546-45c1-8383-3552388fcead.png)
+
+![image](https://user-images.githubusercontent.com/63040492/125545415-0306f8df-6762-4dce-b4df-819d766dc7dd.png)
+
+
