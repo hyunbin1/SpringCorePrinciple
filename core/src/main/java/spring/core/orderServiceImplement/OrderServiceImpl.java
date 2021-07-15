@@ -13,12 +13,19 @@ import spring.core.order.OrderService;
 //         -> 필요데이터: 회원 ID, 상품명, 상품 가격
 public class OrderServiceImpl implements OrderService {
     // 필요한 데이터를 위해 메모리 회원 저장소 & 고정할인 정책을 가져와된다.
-    private final MemberRepository memberRepository = new MemoryMemberRepository();
+    private final MemberRepository memberRepository;
 /*  private final DiscountPolicy discountPolicy = new FixDiscountPolicy();
     private final DiscountPolicy discountPolicy = new RateDiscountPolicy();
     위의 두 문장은 구체화된 객체에 의존하게 된다. 이는 SOLID 중 dip 위반이기 때문에 추상화에 의존을 해야된다.*/
-    public DiscountPolicy discountPolicy;
+    public final DiscountPolicy discountPolicy;
     // 하지만 이렇게 하면 구현체가 없기 때문에 nullpointexception 에러가 난다. - 데이터 들어오는게 없다는 뜻
+
+    // AppConfig를 위한 생성자 작성
+
+    public OrderServiceImpl(MemberRepository memberRepository, DiscountPolicy discountPolicy) {
+        this.memberRepository = memberRepository;
+        this.discountPolicy = discountPolicy;
+    }
 
     @Override
     public Order createOrder(Long memberId, String itemName, int itemPrice){

@@ -1,9 +1,11 @@
-package spring.core.order;
+package spring.core;
 
 import spring.core.member.Grade;
 import spring.core.member.Member;
 import spring.core.member.MemberService;
 import spring.core.memberImplement.MemberServiceImpl;
+import spring.core.order.Order;
+import spring.core.order.OrderService;
 import spring.core.orderServiceImplement.OrderServiceImpl;
 
 public class OrderApp {
