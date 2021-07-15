@@ -1,15 +1,25 @@
 package spring.core.discount;
 
 import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
+import spring.core.AppConfig;
 import spring.core.member.Grade;
 import spring.core.member.Member;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 class RateDiscountPolicyTest {
+
     RateDiscountPolicy discountPolicy = new RateDiscountPolicy();
+//    RateDiscountPolicy discountPolicy;
+//
+//    @BeforeEach
+//    public void beforeEach(){
+//        AppConfig appConfig = new AppConfig();
+//        discountPolicy = new appConfig.discountPolicy();
+
 
     @Test
     @DisplayName("VIP는 할인이 적용되어야 한다.")
