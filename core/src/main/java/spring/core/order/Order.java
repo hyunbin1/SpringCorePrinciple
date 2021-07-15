@@ -19,7 +19,6 @@ public class Order {
         return itemPrice-discountPrice;
     }
 
-
     public Long getMemberId() {
         return memberId;
     }
