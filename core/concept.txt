@@ -51,3 +51,5 @@
     - 의존관계 주입을 사용하면, 정적인 클래스 의존관계(구현체)를 변경하지 않고, 동적인 객체 인스턴스 의존관계를 쉽게 변경할 수 있다.
       cf) 동적인 객체 인스턴스: DiscountPolicy에서 FixDiscount 혹은 RateDiscount 두개를 수시로 바꿔서 사용할 수 있는 것처럼
                             이 두 객체를 동적인 객체 인스턴스라고 한다.
+
+# AppConfig에 있는 Spring - Configuration, Bean
