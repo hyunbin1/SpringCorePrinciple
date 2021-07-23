@@ -70,3 +70,20 @@
       주의: 빈의 이름은 무조건 다른 이름으로 만들어야된다. 중복되게 만들면 절대 안된다. - 실무에서는 명확하고 정확하게 개발해야된다.
 
 
+# For Each문(Java)
+ ex]
+    String[] number = {"one, "two", Three};
+    for(String number : numbers){
+        System.out.println(number);
+
+ 사용 방법:
+    1. for문 안에서 numbers는 한개씩 순차적으로 number에 대입할 객체이다.
+    2. for(괄호)에는 ':' 를 기준으로 왼쪽에는 새로운 객체를, 오른쪽에는 앞에 선언한 배열이나 ArrayList 등을 넣어주면 된다.
+
+
+# beanDefinition 용어 정리:
+    beanDefinition: 빈 하나하나에 대한 메타 데이터 정보이다.
+    getBeanDefinition: 빈 하나 하나에 대하 메타 데이터 정보를 가져오는 것이다.
+    beanDefinition.getRole(): 크게 3가지가 있는데 주로 BeanDefinition.ROLE_APPLICATION을 사용한다.
+        스프링 내부 빈들이 아니라 내가 만든 애플리케이션을 등록하기 위한 빈들이다. 혹은 외부 라이브러리. - 이는 TEST 케이스에서 사용된다.
+
