@@ -52,4 +52,21 @@
       cf) 동적인 객체 인스턴스: DiscountPolicy에서 FixDiscount 혹은 RateDiscount 두개를 수시로 바꿔서 사용할 수 있는 것처럼
                             이 두 객체를 동적인 객체 인스턴스라고 한다.
 
-# AppConfig에 있는 Spring - Configuration, Bean
+# AppConfig에 있는 Spring - Configuration, Bean = 스프링 컨테이너에 대한 설명이다.
+    - ApplicationContext를 '스프링 컨테이너' 라고 한다.
+    - ApplicationContext는 인터페이스로, 이 파일에 들어가면 여러 객체들이 있음을 알 수 있다.
+    - 스프링 컨데이너는 xml 기반으로도 만들 수 있지마느 이제는 주석방식인 Annotation 기반의 자바 설정 클래스로 많이 만든다.
+        cf) @bean 등이 주석 방식이다 -
+    - 스프링 컨테이너는 이 안에 객체들을 담고 있는 것이다.
+    Cf) 스프링 컨테이너는 원래 최상에 BeanFactory고, 그 아래 ApplicationContext가 있는데,
+        BeanFactory를 직접 사용하는 경우는 거의 없어서 ApplicationContext를 스프링 컨테이너라고 한다.
+
+        스프링 컨테이너를 생성할 때는 구성 정보를 지정해 주어야 한다.
+        이를 통해 스프링 컨테이너는 구성 정보를 보고, 객체 생성 유무를 인지한다.
+        우리는 AppConfig에 @Configure을 달아서 구성정보의 위치를 알려주고 구성정보를 기입해 주었다.
+
+    - 스프링 컨테이너 안에 스프링 BEAN 저장소가 있다.
+      이 저장소에는 빈 이름: 빈 객체로 구성되어 있다. == 빈 이름을 찾은 다음, 그 안에 있는 빈 객체를 실행하는 것!
+      주의: 빈의 이름은 무조건 다른 이름으로 만들어야된다. 중복되게 만들면 절대 안된다. - 실무에서는 명확하고 정확하게 개발해야된다.
+
+
