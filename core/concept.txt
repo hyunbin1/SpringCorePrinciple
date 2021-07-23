@@ -87,3 +87,12 @@
     beanDefinition.getRole(): 크게 3가지가 있는데 주로 BeanDefinition.ROLE_APPLICATION을 사용한다.
         스프링 내부 빈들이 아니라 내가 만든 애플리케이션을 등록하기 위한 빈들이다. 혹은 외부 라이브러리. - 이는 TEST 케이스에서 사용된다.
 
+
+# 스프링 빈 조회 기본:
+    스프링 컨테이너에서 스프링 빈을 찾는 가장 기본적인 조회 방법:
+        ac.getBean(빈이름, 타입)
+        ac.getBean(타입)
+        주의! 조회 대상 스프링 비이 없으면 예외가 발생한다.
+            오류 ex) NoSuchBeanDefinitionException: No bean named 'xxxx' av
+
+
