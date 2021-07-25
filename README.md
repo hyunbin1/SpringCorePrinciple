@@ -1,5 +1,11 @@
 # SpringCorePrinciple
 
+# 자세한 Spring 공부내용은 아래 노션 클릭↓
+
+## https://www.notion.so/hyunbinkim/b6b28df4de1448f4a8fc89d6180a4dab?v=7658345da6ef4787a28a6029eb416902
+
+
+
 ### 비지니스 요구사항:
     회원:
         1. 회원을 가입하고 조회할 수 있다.
