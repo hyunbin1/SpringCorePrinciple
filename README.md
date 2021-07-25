@@ -1,6 +1,7 @@
 # SpringCorePrinciple
 
-# 자세한 Spring 공부내용은 아래 노션 클릭↓↓↓↓↓
+# 자세한 Spring 공부내용은 아래 노션 클릭↓
+
 ## www.notion.so/hyunbinkim
 
 
