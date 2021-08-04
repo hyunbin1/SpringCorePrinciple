@@ -13,6 +13,6 @@
         <constructor-arg name="memberRepository" ref="memberRepository"/>
         <constructor-arg name="discountPolicy" ref="discountPolicy"/>
     </bean>
-
+ 
     <bean id="discountPolicy" class="spring.core.discount.RateDiscountPolicy"/>
 </beans>
