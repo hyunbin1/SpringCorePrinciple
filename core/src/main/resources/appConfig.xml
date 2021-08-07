@@ -10,7 +10,7 @@
     <bean id="memberRepository" class="spring.core.memberImplement.MemoryMemberRepository"/>
 
     <bean id="orderService" class="spring.core.orderServiceImplement.OrderServiceImpl">
-        <constructor-arg name="memberRepository" ref="memberRepository"/>
+        <constructor-arg name="memberRepository" ref="memberRepository"/> 
         <constructor-arg name="discountPolicy" ref="discountPolicy"/>
     </bean>
  
