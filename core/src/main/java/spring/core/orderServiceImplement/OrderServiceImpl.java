@@ -1,5 +1,7 @@
 package spring.core.orderServiceImplement;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 import spring.core.discount.DiscountPolicy;
 import spring.core.discount.FixDiscountPolicy;
 import spring.core.discount.RateDiscountPolicy;
@@ -11,6 +13,7 @@ import spring.core.order.OrderService;
 
 // 주문생성: 할인을 적용하기 우해서 회원 등급이 필요하다.
 //         -> 필요데이터: 회원 ID, 상품명, 상품 가격
+@Component
 public class OrderServiceImpl implements OrderService {
     // 필요한 데이터를 위해 메모리 회원 저장소 & 고정할인 정책을 가져와된다.
     private final MemberRepository memberRepository;
@@ -21,7 +24,7 @@ public class OrderServiceImpl implements OrderService {
     // 하지만 이렇게 하면 구현체가 없기 때문에 nullpointexception 에러가 난다. - 데이터 들어오는게 없다는 뜻
 
     // AppConfig를 위한 생성자 작성
-
+    @Autowired
     public OrderServiceImpl(MemberRepository memberRepository, DiscountPolicy discountPolicy) {
         this.memberRepository = memberRepository;
         this.discountPolicy = discountPolicy;

@@ -1,11 +1,13 @@
 package spring.core.memberImplement;
 
+import org.springframework.stereotype.Component;
 import spring.core.member.Member;
 import spring.core.member.MemberRepository;
 
 import java.util.HashMap;
 import java.util.Map;
 
+@Component
 // 메모리에 저장되는 저장소를 실제로 구현해주기
 public class MemoryMemberRepository implements MemberRepository {
 
